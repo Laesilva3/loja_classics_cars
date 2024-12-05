@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: rgb(63, 22, 22);
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header>.container,
+footer>.container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #ff1212;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: rgb(56, 27, 27);
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer:hover {
+    transition-delay: 200ms;
+    transform: scale(1.1);
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#sub-menu li a {
+    cursor: pointer;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.438);
+}
+
+section {
+    padding: 48px 0;
+}
+
+#sobre-a-loja h2 {
+    max-width: 100%;
+}
+
+section h2 {
+    background-color: #4e1313;
+    color: #fff;
+    max-width: 95%;
+    margin-bottom: 24px;
+    font-style: italic;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.105);
+}
+
+.lista-cars li {
+    list-style: none;
+    max-width: 100%;
+    margin-bottom: 24px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.438);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.lista-cars li:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.lista-cars button:hover {
+    background-color: rgb(31, 13, 13);
+}
+
+.lista-cars li img {
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+.lista-cars li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #940909;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#contato button:hover {
+    background-color: rgb(236, 99, 99);
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    .container-mobi {
+        display: flex;
+    }
+
+    nav {
+        border-radius: 2%;
+    }
+
+    .menu-hamburguer {
+        margin-top: 16px;
+    }
+
+    #sub-menu {
+        display: grid;
+        row-gap: 8px;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .lista-cars {
+        grid-template-columns: repeat(1, 100%);
+        display: grid;
+    }
+
+    .item-central {
+        margin: 0;
+    }
+
+    section h2 {
+        max-width: 100%;
+    }
+
+    footer li {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    .container-mobi {
+        display: flex;
+    }
+
+    nav {
+        border-radius: 2%;
+    }
+
+    .menu-hamburguer {
+        margin-top: 16px;
+    }
+
+    #sub-menu {
+        display: grid;
+        row-gap: 8px;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-bottom: 32px;
+        margin-right: 0;
+    }
+
+    .lista-cars {
+        grid-template-columns: repeat(2, 47.50%);
+        display: grid;
+        column-gap: 5%;
+    }
+
+    .item-central {
+        margin: 0;
+    }
+
+    section h2 {
+        max-width: 100%;
+    }
+
+    footer li {
+        display: flex;
+    }
+}
